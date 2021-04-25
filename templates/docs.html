@@ -250,13 +250,6 @@
             <div role="separator" class="dropdown-divider"></div>
             <a class="dropdown-item bg-dark" href="#forest">Random forest</a>
             <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item bg-dark" href="#mlp">Multi layer perceptron neural network</a>
-            <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item bg-dark" href="#lstm">LSTM neural network</a>
-            <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item bg-dark" href="#gru">GRU nwural network</a>
-            <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item bg-dark" href="#wide">Wide deep neural network</a>
           </div>
         </li>
         <li class="nav-item">
@@ -272,11 +265,11 @@
         <h4 id="intro">Introduction</h4>
         <p>Air pollution is one of the primary problems that were born out of industrialization and
           modernization. With the rapid growth of urbanization and industrialization, many cities are
-          suffering from heavy air pollution. Kolkata, one of the major metropolitan cities in India, has
+          suffering from heavy air pollution. Mumbai, one of the major metropolitan cities in India, has
           been suffering from this issue for over a decade. The problem of falling air quality especially
           during the winter season has intensified over the last few years and hence an analysis of the
           problem and implementation of proper prediction systems has gained great importance at this
-          time for the protection of people and the improvement of the air quality in Kolkata.</p>
+          time for the protection of people and the improvement of the air quality in India.</p>
       </div>
       <div class="content">
         <h4 id="meth">Methodology</h4>
@@ -294,9 +287,7 @@
           air quality parameters are our output/dependent variables. As we are dealing with continuous
           data, our problem is regression problem. The algorithms we have implemented include
           multivariable linear regression, polynomial regression, support vector regression, decision tree,
-          random forest and neural network models like LSTM, GRU, MLP and wide deep MLP. The
-          models which have performed well are support vector regression, random forest and neural
-          network models. We have chosen four metrics to evaluate our models which are mean absolute
+          random forest. We have chosen four metrics to evaluate our models which are mean absolute
           error, mean squared error, root mean squared error and r2 score. We have also calculated the
           accuracy of a model by finding out the percentage of predictions having less than 20% error from
           a series of predictions on the test data. To get better accuracy we have introduced some artificial
@@ -348,34 +339,6 @@
           learns from a random sample of the data points.The idea is that by training each tree on different samples,
           although each tree might have high variance with respect to a particular set of the training data, overall,
           the entire forest will have lower variance but not at the cost of increasing the bias.</p>
-      </div>
-      <div class="content">
-        <h4 id="mlp">Multi layer perceptron neural network</h4>
-        <p>A perceptron is a network with two layers, one input and one output. Artificial neural network, which has
-          input layer, output layer, and two or more hidden layers is called multilayer perceptron or MLP.It is a class
-          of feedforward artificial neural network (ANN). MLP utilizes backpropagation for training and learns and
-          updates weights for improvements.</p>
-      </div>
-      <div class="content">
-        <h4 id="lstm">LSTM neural network</h4>
-        <p>LSTM was initially proposed for language models and
-          was well-known for its excellent ability to memorize
-          long-term dependencies. However, due to its complex
-          structure, the solution to LSTM NNs usually takes long time.The LSTM mitigates vanishing gradient problem via
-          input, forget, and output gates; the input gate regulates how much of the new cell state to keep, the forget
-          gate regulates how much of the existing memory to forget, and the output gate regulates how much of the cell
-          state should be exposed to the next layers of the network.</p>
-      </div>
-      <div class="content">
-        <h4 id="gru">GRU neural network</h4>
-        <p>The GRU operates using a reset gate and an update gate. The reset gate sits between the previous activation
-          and the next candidate activation to forget previous state, and the update gate decides how much of the
-          candidate activation to use in updating the cell state.</p>
-      </div>
-      <div class="content">
-        <h4 id="wide">Wide deep neural network</h4>
-        <p>Training a wide linear model (for memorization) alongside a deep neural network (for generalization), one can
-          combine the strengths of both. It's called Wide & Deep Learning. </p>
       </div>
       <div class="content">
         <h4 id="eval">Evaluation matrices</h4>
@@ -432,38 +395,6 @@
               <td>0.9176</td>
               <td>72.99%</td>
             </tr>
-            <tr>
-              <td>Multi layer perceptron</td>
-              <td>13.446</td>
-              <td>376.514</td>
-              <td>19.404</td>
-              <td>0.9367</td>
-              <td>74.73%</td>
-            </tr>
-            <tr>
-              <td>Wide deep MLP</td>
-              <td>14.474</td>
-              <td>384.695</td>
-              <td>19.614</td>
-              <td>0.9356</td>
-              <td>73.46%</td>
-            </tr>
-            <tr>
-              <td>LSTM</td>
-              <td>14.769</td>
-              <td>386.02</td>
-              <td>19.647</td>
-              <td>0.9354</td>
-              <td>72.19%</td>
-            </tr>
-            <tr>
-              <td>GRU</td>
-              <td>14.57</td>
-              <td>382.971</td>
-              <td>19.57</td>
-              <td>0.9359</td>
-              <td>73.67%</td>
-            </tr>
           </tbody>
         </table>
         <br>
@@ -512,38 +443,6 @@
               <td>0.857</td>
               <td>88.39%</td>
             </tr>
-            <tr>
-              <td>Multi layer perceptron</td>
-              <td>4.009</td>
-              <td>29.612</td>
-              <td>5.442</td>
-              <td>0.883</td>
-              <td>88.74%</td>
-            </tr>
-            <tr>
-              <td>Wide deep MLP</td>
-              <td>4.097</td>
-              <td>30.469</td>
-              <td>5.519</td>
-              <td>0.879</td>
-              <td>88.95%</td>
-            </tr>
-            <tr>
-              <td>LSTM</td>
-              <td>4.001</td>
-              <td>31.039</td>
-              <td>5.571</td>
-              <td>0.877</td>
-              <td>90.87%</td>
-            </tr>
-            <tr>
-              <td>GRU</td>
-              <td>4.023</td>
-              <td>30.381</td>
-              <td>5.512</td>
-              <td>0.88</td>
-              <td>90.02%</td>
-            </tr>
           </tbody>
         </table>
         <br>
@@ -591,38 +490,6 @@
               <td>1.833</td>
               <td>0.71</td>
               <td>52.11%</td>
-            </tr>
-            <tr>
-              <td>Multi layer perceptron</td>
-              <td>1.196</td>
-              <td>2.527</td>
-              <td>1.589</td>
-              <td>0.784</td>
-              <td>56.26%</td>
-            </tr>
-            <tr>
-              <td>Wide deep MLP</td>
-              <td>1.226</td>
-              <td>2.67</td>
-              <td>1.621</td>
-              <td>0.775</td>
-              <td>55.2%</td>
-            </tr>
-            <tr>
-              <td>LSTM</td>
-              <td>1.191</td>
-              <td>2.489</td>
-              <td>1.578</td>
-              <td>0.787</td>
-              <td>57.32%</td>
-            </tr>
-            <tr>
-              <td>GRU</td>
-              <td>1.171</td>
-              <td>2.466</td>
-              <td>1.57</td>
-              <td>0.789</td>
-              <td>54.99%</td>
             </tr>
           </tbody>
         </table>
