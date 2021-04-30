@@ -250,6 +250,10 @@
             <div role="separator" class="dropdown-divider"></div>
             <a class="dropdown-item bg-dark" href="#forest">Random forest</a>
             <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item bg-dark" href="#mlp">Multi layer perceptron neural network</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item bg-dark" href="#lstm">LSTM neural network</a>
+            <div role="separator" class="dropdown-divider"></div>
           </div>
         </li>
         <li class="nav-item">
@@ -341,6 +345,22 @@
           the entire forest will have lower variance but not at the cost of increasing the bias.</p>
       </div>
       <div class="content">
+        <h4 id="mlp">Multi layer perceptron neural network</h4>
+        <p>A perceptron is a network with two layers, one input and one output. Artificial neural network, which has
+          input layer, output layer, and two or more hidden layers is called multilayer perceptron or MLP.It is a class
+          of feedforward artificial neural network (ANN). MLP utilizes backpropagation for training and learns and
+          updates weights for improvements.</p>
+      <div class="content">
+        <h4 id="lstm">LSTM neural network</h4>
+        <p>LSTM was initially proposed for language models and
+          was well-known for its excellent ability to memorize
+          long-term dependencies. However, due to its complex
+          structure, the solution to LSTM NNs usually takes long time.The LSTM mitigates vanishing gradient problem via
+          input, forget, and output gates; the input gate regulates how much of the new cell state to keep, the forget
+          gate regulates how much of the existing memory to forget, and the output gate regulates how much of the cell
+          state should be exposed to the next layers of the network.</p>
+      </div>
+      <div class="content">
         <h4 id="eval">Evaluation matrices</h4>
         <p>Errors in machine learning models help to choose better model among different models.It reflects
           effectiveness of an individual model over others.We have chosen three main matrices to evaluate our models. a)
@@ -395,6 +415,22 @@
               <td>0.9176</td>
               <td>72.99%</td>
             </tr>
+            <tr>
+              <td>Multi layer perceptron</td>
+              <td>13.446</td>
+              <td>376.514</td>
+              <td>19.404</td>
+              <td>0.9367</td>
+              <td>74.73%</td>
+            </tr>
+            <tr>
+              <td>LSTM</td>
+              <td>14.769</td>
+              <td>386.02</td>
+              <td>19.647</td>
+              <td>0.9354</td>
+              <td>72.19%</td>
+            </tr>
           </tbody>
         </table>
         <br>
@@ -443,6 +479,22 @@
               <td>0.857</td>
               <td>88.39%</td>
             </tr>
+            <tr>
+              <td>Multi layer perceptron</td>
+              <td>4.009</td>
+              <td>29.612</td>
+              <td>5.442</td>
+              <td>0.883</td>
+              <td>88.74%</td>
+            </tr>
+            <tr>
+              <td>LSTM</td>
+              <td>4.001</td>
+              <td>31.039</td>
+              <td>5.571</td>
+              <td>0.877</td>
+              <td>90.87%</td>
+            </tr>
           </tbody>
         </table>
         <br>
@@ -490,6 +542,22 @@
               <td>1.833</td>
               <td>0.71</td>
               <td>52.11%</td>
+            </tr>
+            <tr>
+              <td>Multi layer perceptron</td>
+              <td>1.196</td>
+              <td>2.527</td>
+              <td>1.589</td>
+              <td>0.784</td>
+              <td>56.26%</td>
+            </tr>
+            <tr>
+              <td>LSTM</td>
+              <td>1.191</td>
+              <td>2.489</td>
+              <td>1.578</td>
+              <td>0.787</td>
+              <td>57.32%</td>
             </tr>
           </tbody>
         </table>
