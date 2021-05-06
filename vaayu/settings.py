@@ -26,7 +26,7 @@ SECRET_KEY = 'ipt)@b!ugf6hg05h-x9@l&bkee0jr)z(z$h+lo-)kbsd@n&5he'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vaayu-air-quality.herokuapp.com']
 
 
 # Application definition
